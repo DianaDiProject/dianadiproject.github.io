@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<!--Основные параметры документа-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медицинский центр</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<!--Оснонвые теги для тела документа-->
+
+<body>
+    <!--шапка сайта-->
+    <header>
+        <div class="header_info">
+            <div class="top_header">
+                <div class="logo">
+                    <a href="#top"><img src="/Images/logo.png" alt="Logo"></a>
+                </div>
+                <div class="mobile-header">
+                    <div class="mobile-contacts">
+                        <div class="phone-icon" onclick="toggleContactsPopup()">
+                            ☎
+                        </div>
+                    </div>
+                    <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <span>Меню</span>
+                        <div class="burger-lines">
+                            <div class="burger-line"></div>
+                            <div class="burger-line"></div>
+                            <div class="burger-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <p>8 (495) 926-06-03</p>
+                    <div class="whatsapp">
+                        <img src="/Images/social.png" alt="Whatsapp Icon">
+                        <h3>Whatsapp</h3>
+                    </div>
+                </div>
+                <div class="inf">
+                    <h3>info@gormedcentre.ru</h3>
+                    <h3><a href="#">Заказать звонок</a></h3>
+                </div>
+                <div class="inf">
+                    <h3>г. Мытищи,</h3>
+                    <h3>ул.Рождественская, д.7</h3>
+                </div>
+
+                <div class="inf">
+                    <h3>Ежедневно</h3>
+                    <h3>с 9.00 до 21.00</h3>
+                </div>
+                <div class="right_top">
+                    <div class="search-container">
+                        <button class="search-btn" aria-label="Открыть поиск">
+                            🔍︎
+                        </button>
+                        <input type="text" class="search-input" placeholder="Поиск...">
+                    </div>
+                    <div class="cabinet">
+                        <button>Личный кабинет</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts-popup" id="contactsPopup">
+            <div class="popup-content">
+                <span class="popup-close" onclick="toggleContactsPopup()">×</span>
+                <h3>Контактная информация</h3>
+                <p>Телефон: 8 (495) 926-06-03</p>
+                <p>Whatsapp: +7 (495) 926-06-03</p>
+                <p>Email: info@gormedcentre.ru</p>
+                <p>Адрес: г. Мытищи, ул.Рождественская, д.7</p>
+                <p>Часы работы: Ежедневно с 9.00 до 21.00</p>
+                <a href="#">Заказать звонок</a>
+            </div>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <div class="dropdown-container">
+                <a href="#directions" class="dropdown-toggle" onclick="toggleDropdown(event)">Направления ▼</a>
+                <div class="dropdown">
+                    <a href="#pediatrics">Педиатрия</a>
+                    <a href="#surgery">Хирургия</a>
+                    <a href="#cardiology">Кардиология</a>
+                </div>
+            </div>
+            <a href="#services">Услуги</a>
+            <a href="#doctors">Врачи</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#stocks">Акции</a>
+            <div class="dropdown-container">
+                <a href="#about" class="dropdown-toggle" onclick="toggleDropdown(event)">О центре ▼</a>
+                <div class="dropdown">
+                    <a href="#gallery">Фотогалерея</a>
+                    <a href="#branches">Филиалы</a>
+                </div>
+            </div>
+            <a href="#childhood">Детство</a>
+            <a href="#contacts">Контакты</a>
+            <div class="eyes">
+                <img src="/Images/icon.png" alt="Иконка очков">
+                <h2 class="toggle-accessibility">Версия для слабовидящих</h2>
+            </div>
+            <button class="mainbtn">Запись на приём</button>
+        </nav>
+    </header>
+
+    <!--Основная часть сайта-->
+    <main>
+        <div class="main_info" id="services">
+            <div class="zapis">
+                <div class="text_zapis">
+                    <h2 class="h_1">Позаботьтесь о своём здоровье</h2>
+                    <p>Осуществляем комплексное медицинское обслуживание
+                        населения: консультации и амбулаторное лечение у
+                        специалистов всех направлений, медицинские
+                        обследования и диагностические процедуры.</p>
+                    <button>Записаться</button>
+                </div>
+                <div class="images_zapis">
+                    <img src="/Images/girl1.png" alt="Девушка с фоном" class="desktop-image">
+                    <img src="/Images/girl1_mobile.png" alt="Девушка с фоном" class="mobile-image">
+                </div>
+            </div>
+        </div>
+        <div class="parts">
+            <div class="part_parts">
+                <h3>Направления</h3>
+                <div class="separator"></div>
+                <p>Акушерство</p>
+                <p>Косметология</p>
+                <p>Хирургия</p>
+                <p>Мануальная терапия</p>
+                <p>Психотерапия</p>
+                <button>Все услуги</button>
+            </div>
+            <div class="part_parts">
+                <h3>Диагностика</h3>
+                <div class="separator"></div>
+                <p>МРТ</p>
+                <p>КТ</p>
+                <p>УЗИ</p>
+                <p>Рентген</p>
+                <p>Гастроскопия</p>
+                <button>Вся диагностика</button>
+            </div>
+            <div class="part_parts">
+                <h3>Врачи</h3>
+                <div class="separator"></div>
+                <p>Стоматолог</p>
+                <p>Эндокринолог</p>
+                <p>Хирург</p>
+                <p>Терапевт</p>
+                <p>Невролог</p>
+                <button>Все врачи</button>
+            </div>
+            <div class="part_parts">
+                <h3>Детство</h3>
+                <div class="separator"></div>
+                <p>Педиатр</p>
+                <p>Стоматолог</p>
+                <p>Дерматолог</p>
+                <p>Офтальмолог</p>
+                <p>Логопед</p>
+                <button>Все врачи</button>
+            </div>
+        </div>
+
+        <section class="appointment-form appointment-form--booking">
+            <div class="form-header">
+                <h2 class="h_1">Записаться на приём</h2>
+                <p class="header-description">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+            </div>
+            <form>
+                <div class="form-container">
+                    <div class="form-fields">
+                        <div class="form-row">
+                            <select name="direction" required>
+                                <option value="" disabled selected>Выберете направление</option>
+                                <option value="therapy">Терапия</option>
+                                <option value="dentistry">Стоматология</option>
+                                <option value="pediatrics">Педиатрия</option>
+                            </select>
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                        </div>
+
+                        <div class="form-row">
+                            <select name="doctor" required>
+                                <option value="" disabled selected>Выберете врача</option>
+                                <option value="doctor_1">Крятов Андрей</option>
+                                <option value="doctor_2">Савина Наталья</option>
+                                <option value="doctor_3">Зотова Гюзяль</option>
+                            </select>
+                            <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                        </div>
+                    </div>
+
+                    <div class="form-sidebar">
+                        <div class="sidebar-content">
+                            <p class="header-description mobile">Оставьте заявку и мы свяжемся с вами в ближайшее время
+                            </p>
+                            <button type="submit" class="form-button">Оставить заявку</button>
+                            <label class="checkbox-label">
+                                <input type="checkbox" required>
+                                <span>Отправляя заявку, вы соглашаетесь на нашу <a href="#" target="_blank">политику
+                                        конфиденциальности</a></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="appointment-form appointment-form--registration">
+            <div class="form-header">
+                <h2 class="h_1">Регистрация</h2>
+                <p class="header-description">Создайте аккаунт для доступа ко всем возможностям</p>
+            </div>
+            <form>
+                <div class="form-container">
+                    <div class="form-fields">
+                        <div class="form-row">
+                            <input type="text" name="first_name" placeholder="Имя" required>
+                            <input type="text" name="last_name" placeholder="Фамилия" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" name="email" placeholder="Электронная почта" required>
+                            <input type="tel" name="phone" placeholder="Телефон">
+                        </div>
+
+                        <div class="form-row">
+                            <input type="password" name="password" placeholder="Пароль" required>
+                            <input type="password" name="confirm_password" placeholder="Подтвердите пароль" required>
+                        </div>
+                    </div>
+                    <div class="form-sidebar">
+                        <p class="header-description mobile">Создайте аккаунт для доступа ко всем возможностям</p>
+                        <button type="submit" class="form-button">Зарегистрироваться</button>
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            <span>Я согласен с <a href="#" target="_blank">условиями использования</a></span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="appointment-form appointment-form--feedback">
+            <div class="form-header">
+                <h2 class="h_1">Обратная связь</h2>
+                <p class="header-description">Мы ответим на ваш вопрос в течение 24 часов</p>
+            </div>
+            <form>
+                <div class="form-container">
+                    <div class="form-fields">
+                        <div class="form-row">
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                            <input type="email" name="email" placeholder="Электронная почта" required>
+                        </div>
+                        <div class="form-row">
+                            <select name="topic" required>
+                                <option value="" disabled selected>Тема обращения</option>
+                                <option value="question">Вопрос</option>
+                                <option value="cooperation">Сотрудничество</option>
+                                <option value="complaint">Жалоба</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-sidebar">
+                        <p class="header-description mobile">Мы ответим на ваш вопрос в течение 24 часов</p>
+                        <button type="submit" class="form-button">Отправить сообщение</button>
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            <span>Я согласен на обработку <a href="#" target="_blank">персональных данных</a></span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <div class="shortinfo">
+            <div class="top_shortinfo">
+                <div class="text_shortinfo">
+                    <h2 class="h_1">Немного о нашем <br>
+                        медицинском центре</h2>
+                    <p>Многопрофильное амбулаторно-поликлиническое учреждение
+                        для детей и взрослых в городе Мытищи. Мы предоставляем
+                        платные медицинские услуги и занимаем лидирующие позиции
+                        среди медицинских учреждений города Мытищи.
+                        У нас ежегодно обслуживаются более 150000 пациентов.
+                </div>
+                <img src="/Images/girl2.png" alt="Девушка">
+            </div>
+            <div class="list_shortinfo">
+                <div class="partlist_shortinfo">
+                    <img src="Images/cross.png" alt="Плюс">
+                    <p class="list_main">>10</p>
+                    <p class="list_inf">лет заботы о вашем здоровье</p>
+                </div>
+                <div class="partlist_shortinfo">
+                    <img src="Images/cross.png" alt="Плюс">
+                    <p class="list_main">150</p>
+                    <p class="list_inf">квалифицированных специалистове</p>
+                </div>
+
+                <div class="partlist_shortinfo">
+                    <img src="Images/cross.png" alt="Плюс">
+                    <p class="list_main">3 000</p>
+                    <p class="list_inf">медицинских услуг по всем направлениям</p>
+                </div>
+
+                <div class="partlist_shortinfo">
+                    <img src="Images/cross.png" alt="Плюс">
+                    <p class="list_main">День в день</p>
+                    <p class="list_inf">прием врача любой специальности в день обращения</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stocks" id="stocks">
+            <h2 class="h_1">Акции</h2>
+            <div class="carousel">
+                <div class="el_carousel">
+                    <div class="info_carousel">
+                        <div class="date_carousel">
+                            <h3>до 30 сентября 2023</h3>
+                        </div>
+                        <div class="main_text">
+                            <h2 class="num_stock">-20%</h2>
+                            <h2 class="name_stock">на биоревитацию Hualuform</h2>
+                        </div>
+                    </div>
+                    <div class="img_carousel">
+                        <img src="/Images/sale.png" alt="">
+                    </div>
+                </div>
+
+                <div class="el_carousel">
+                    <div class="info_carousel">
+                        <div class="date_carousel">
+                            <h3>до 30 сентября 2023</h3>
+                        </div>
+                        <div class="main_text">
+                            <h2 class="num_stock">-20%</h2>
+                            <h2 class="name_stock">на биоревитацию Hualuform</h2>
+                        </div>
+                    </div>
+                    <div class="img_carousel">
+                        <img src="/Images/sale.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="doctors-section" id="doctors">
+                <div class="top_doc">
+                    <h2 class="h_1">Врачи медицинского <br> центра</h2>
+                    <div class="slider-arrows">
+                        <button class="arrow arrow-left" aria-label="Предыдущий слайд">&#10094;</button>
+                        <button class="arrow arrow-right" aria-label="Следующий слайд">&#10095;</button>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="slider-track">
+                        <div class="slide">
+                            <img src="/Images/doctor1.png" alt="Крятов Андрей">
+                            <h2>Крятов Андрей</h2>
+                            <p>Главный врач, уролог, андролог</p>
+                        </div>
+                        <div class="slide">
+                            <img src="/Images/doctor2.png" alt="Савина Наталья">
+                            <h2>Савина Наталья</h2>
+                            <p>Врач-невролог</p>
+                        </div>
+                        <div class="slide">
+                            <img src="/Images/doctor3.png" alt="Зотова Гюзэль">
+                            <h2>Зотова Гюзяль</h2>
+                            <p>Врач-терапевт</p>
+                        </div>
+                        <div class="slide">
+                            <img src="/Images/doctor4.png" alt="Николаева Оксана">
+                            <h2>Николаева Оксана</h2>
+                            <p>Врач-терапевт</p>
+                        </div>
+                        <div class="slide">
+                            <img src="/Images/doctor1.png" alt="Крятов Андрей">
+                            <h2>Крятов Андрей</h2>
+                            <p>Главный врач, уролог, андролог</p>
+                        </div>
+                        <div class="slide">
+                            <img src="/Images/doctor2.png" alt="Савина Наталья">
+                            <h2>Савина Наталья</h2>
+                            <p>Врач-невролог</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="otzuvy" id="reviews">
+                <h2 class="h_1">Отзывы пациентов</h2>
+                <div class="sec">
+                    <div class="sections_otz">
+                        <div class="section">
+                            <h3 class="fi">Балушина Татьяна</h3>
+                            <h3 class="data">18 апреля 2022</h3>
+                            <img src="/Images/star.png" alt="Количество звёзд">
+                            <p>Попала к Татьяне Ивановне спонтанно. Очень довольна приёмом
+                                и проведением ультразвуковой диагностики. Спасибо Наталье
+                                Ивановне за внимательное отношение к пациентам! При
+                                возникнвении проблем теперь только к ней!</p>
+                            <button>Подробнее</button>
+                            <div class="vrach_otz">
+                                <h2 class="vrach">Врач:</h2>
+                                <h2 class="fio">Савина Наталья Владимировна</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sections_otz">
+                        <div class="section">
+                            <h3 class="fi">Трофимов Иван</h3>
+                            <h3 class="data">24 ноября 2021</h3>
+                            <img src="/Images/star.png" alt="Количество звёзд">
+                            <p>Огромное спасибо врачу за тщательное обследование. Выявили
+                                нехватку витамина Д, проблем с щитовидной, к счастью, не
+                                оказалось. Доктор приятная в общении и настоящий
+                                профессионал!</p>
+                            <button>Подробнее</button>
+                            <div class="vrach_otz">
+                                <h2 class="vrach">Врач:</h2>
+                                <h2 class="fio">Крятов Андрей Михайлович</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech">
+                <h2 class="h_1">Технологии и оборудование</h2>
+                <div class="sections_tech">
+                    <div class="block_tech">
+                        <img class="zoom-image" src="/Images/technolgy1.png" alt="Изображение УЗИ Аппарата">
+                        <div class="text">
+                            <h3 class="name">УЗИ Аппарат</h3>
+                            <h2 class="name_big">УЗИ Aplio 400</h2>
+                            <p>Аппарат УЗИ экспертного класса, обеспечивающий удивительно четкое изображение,
+                                превосходную производительность и
+                                эргономичное рабочее место с полностью настраиваемой консолью.</p>
+                        </div>
+                    </div>
+                    <div class="block_tech">
+                        <img class="zoom-image" src="/Images/technolgy2.png" alt="Изображение колоноскопа">
+                        <div class="text">
+                            <h3 class="name">Колоноскоп</h3>
+                            <h2 class="name_big">Olympus cF-Q150l</h2>
+                            <p>Колоновидеоскоп CF-Q150 L предназначен для практического использования с широким
+                                диаметром инструментального канала в
+                                3,7 мм и наружным диаметром и дистального конца, и вводимой трубки 12,8 мм.</p>
+                        </div>
+                    </div>
+                    <div class="block_tech">
+                        <img class="zoom-image" src="/Images/technolgy3.png" alt="Изображение рентген-аппарата">
+                        <div class="text">
+                            <h3 class="name">Рентген-аппарат</h3>
+                            <h2 class="name_big">ПроГраф 5000</h2>
+                            <p>ПроГраф-5000 с конструкцией штатива типа С-дуга предназначен для проведения
+                                флюорографического обследования органов
+                                грудной клетки пациента в прямой и боковой проекциях в положении стоя и обеспечивает
+                                цифровую регистрацию изображения.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog">
+                <div class="topppp">
+                    <h2 class="h_1 hhh">Блог от наших специалистов</h2>
+                    <button>Читать все</button>
+                </div>
+                <div class="block_blog">
+                    <div class="blog1">
+                        <img src="Images/blog1.png" alt="">
+                        <h2>Кто находится в группе риска по глаукоме?</h2>
+                        <p>Глаукома — прогрессирующее заболевание, приводящее к безвозвратной слепоте, в основе
+                            кото...
+                        </p>
+                        <div class="bottommm">
+                            <img src="/Images/doctor_circle.png" alt="">
+                            <div class="bottommm2">
+                                <h3 class="fiii">Савина Наталья</h3>
+                                <h3 class="daterrr">30 авг. 2023 • 5 минут на чтение</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog1">
+                        <img src="Images/blog1.png" alt="">
+                        <h2>Кто находится в группе риска по глаукоме?</h2>
+                        <p>Глаукома — прогрессирующее заболевание, приводящее к безвозвратной слепоте, в основе
+                            кото...
+                        </p>
+                        <div class="bottommm">
+                            <img src="/Images/doctor_circle.png" alt="">
+                            <div class="bottommm2">
+                                <h3 class="fiii">Савина Наталья</h3>
+                                <h3 class="daterrr">30 авг. 2023 • 5 минут на чтение</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog1">
+                        <img src="Images/blog1.png" alt="">
+                        <h2>Кто находится в группе риска по глаукоме?</h2>
+                        <p>Глаукома — прогрессирующее заболевание, приводящее к безвозвратной слепоте, в основе
+                            кото...
+                        </p>
+                        <div class="bottommm">
+                            <img src="/Images/doctor_circle.png" alt="">
+                            <div class="bottommm2">
+                                <h3 class="fiii">Савина Наталья</h3>
+                                <h3 class="daterrr">30 авг. 2023 • 5 минут на чтение</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog1">
+                        <img src="Images/blog1.png" alt="">
+                        <h2>Кто находится в группе риска по глаукоме?</h2>
+                        <p>Глаукома — прогрессирующее заболевание, приводящее к безвозвратной слепоте, в основе
+                            кото...
+                        </p>
+                        <div class="bottommm">
+                            <img src="/Images/doctor_circle.png" alt="">
+                            <div class="bottommm2">
+                                <h3 class="fiii">Савина Наталья</h3>
+                                <h3 class="daterrr">30 авг. 2023 • 5 минут на чтение</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="part">
+                <h2 class="h_1">Наши партнёры</h2>
+                <div class="partners">
+                    <div class="block_part">
+                        <img src="/Images/partner1.png" alt="">
+                    </div>
+                    <div class="block_part">
+                        <img src="/Images/partner2.png" alt="">
+                    </div>
+                    <div class="block_part">
+                        <img src="/Images/partner3.png" alt="">
+                    </div>
+                    <div class="block_part">
+                        <img src="/Images/partner4.png" alt="">
+                    </div>
+                    <div class="block_part">
+                        <img src="/Images/partner5.png" alt="">
+                    </div>
+                    <div class="block_part">
+                        <img src="/Images/partner6.png" alt="">
+                    </div>
+                    <div class="block_part">
+                        <img src="/Images/partner7.png" alt="">
+                    </div>
+                    <div class="block_part">
+                        <img src="/Images/partner8.png" alt="">
+                    </div>
+                    <div class="block_part">
+                        <img src="/Images/partner9.png" alt="">
+                    </div>
+                    <div class="block_part">
+                        <img src="/Images/partner10.png" alt="">
+                    </div>
+                    <div class="block_part">
+                        <img src="/Images/partner11.png" alt="">
+                    </div>
+                    <div class="block_part">
+                        <img src="/Images/partner12.png" alt="">
+                    </div>
+                    <div class="block_part">
+                        <img src="/Images/partner13.png" alt="">
+                    </div>
+                    <div class="block_part">
+                        <img src="/Images/partner14.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="licenses">
+                <h2 class="h_1">Лицензии и сертификаты</h2>
+                <div class="all_licenses">
+                    <div class="license">
+                        <div class="img_licence">
+                            <img src="/Images/download1.png" alt="Первая лицензия">
+                        </div>
+                        <h3>Сертификат ГОСТ Р ISO 9001-2015</h3>
+                    </div>
+                    <div class="license">
+                        <div class="img_licence">
+                            <img src="/Images/download2.png" alt="Вторая лицензия">
+                        </div>
+                        <h3>Лицензия Л041-01162-5000369739 (выписка из реестра)</h3>
+                    </div>
+                    <div class="license">
+                        <div class="img_licence">
+                            <img src="/Images/download3.png" alt="Третяя лицензия">
+                        </div>
+                        <h3>Лицензия Л017-01162-50/00561579 (выписка из реестра)</h3>
+                    </div>
+                    <div class="license">
+                        <div class="img_licence">
+                            <img src="/Images/download4.png" alt="Четвёртая лицензия">
+                        </div>
+                        <h3>Лицензия Л041-01162-50/00338967 (выписка из реестра)</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map">
+                <h2 class="h_1">Как нас найти</h2>
+                <div class="map2">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0bd1a3c03faa34ac53d9c3bcc785901153256a8580c4222e1e1eb31eaac7ffc&amp;source=constructor"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--подвал сайта-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row footer-main">
+                <div class="footer-logo">
+                    <img src="/Images/logo.png" alt="Логотип медицинского центра">
+                </div>
+
+                <nav class="footer-nav">
+                    <div class="dropdown-container">
+                        <a href="#" class="dropdown-toggle">Направления ▼</a>
+                        <div class="dropdown">
+                            <a href="#">Терапия</a>
+                            <a href="#">Хирургия</a>
+                            <a href="#">УЗИ</a>
+                            <a href="#">Анализы</a>
+                            <a href="#">Диагностика</a>
+                        </div>
+                    </div>
+                    <a href="#services">Услуги</a>
+                    <a href="#doctors">Врачи</a>
+                    <a href="#reviews">Отзывы</a>
+                    <a href="#stocks">Акции</a>
+                    <div class="dropdown-container">
+                        <a href="#" class="dropdown-toggle">О центре ▼</a>
+                        <div class="dropdown">
+                            <a href="#">О нас</a>
+                            <a href="#">Лицензии</a>
+                            <a href="#">Фотогалерея</a>
+                        </div>
+                    </div>
+                    <a href="#">Детство</a>
+                    <a href="#">Контакты</a>
+                </nav>
+            </div>
+
+            <div class="footer-row footer-contacts">
+                <div class="copyright">
+                    © 2011-2023 Городской Медицинский Центр.<br>Все права защищены.
+                </div>
+
+                <div class="contact-phones">
+                    <p>8 (495) 926-06-03</p>
+                    <p>8 (495) 588-08-80</p>
+                </div>
+
+                <div class="contact-address">
+                    <p>г. Мытищи, ул.Рождественская, д.7</p>
+                    <div class="working-hours">
+                        <p>Ежедневно</p>
+                        <p>с 9.00 до 21.00</p>
+                    </div>
+                </div>
+
+                <button class="callback-btn">Заказать обратный звонок</button>
+
+                <div class="contact-secondary">
+                    <p>info@gormedcentre.ru</p>
+                </div>
+            </div>
+
+            <div class="footer-row footer-bottom">
+                <a href="#" class="policy-link">Политика конфиденциальности</a>
+
+                <div class="social-links">
+                    <a href="#" class="whatsapp-link">
+                        <img src="/Images/social.png" alt="WhatsApp" width="20">
+                    </a>
+                    <a href="#" class="vk-link">
+                        <img src="/Images/social2.png" alt="ВКонтакте" width="20">
+                    </a>
+                    <a href="#" class="accessibility-link">
+                        <img src="/Images/icon.png" alt="Версия для слабовидящих" width="20">
+                    </a>
+                </div>
+            </div>
+
+            <div class="legal-info">
+                <p>Информация о ценах носит уведомительный характер и не является публичной офертой. Действующий
+                    прейскурант, заверенный печатью и подписью руководителя, находится на информационных стендах Центра.
+                </p>
+                <p>Деятельность ООО «ГМЦ» осуществляется на основании действующей лицензии, выданной Департаментом
+                    здравоохранения города Москвы.</p>
+                <p>Имеются противопоказания. Необходимо проконсультироваться со специалистом.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Подключение скриптов-->
+    <script src="ads.js"></script><!--1 ОКНА-->
+    <script src="java.js"></script><!--23 МЕНЮ-->
+    <script src="menu1.js"></script>
+    <script src="menu2.js"></script> <!--4 СЛАЙДЕР-->
+    <script src="zoom.js"></script> <!--5 ИЗОБРАЖЕНИЯ-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--678 JQUERY-->>
+    <script src="eyes.js"></script>
+    <script src="search.js"></script>
+    <script src="burger.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="list.js"></script> <!--9101112 UI-->
+    <script src="carousel.js"></script>
+    <script src="smooth-scroll.js"></script>
+    <script src="tooltips.js"></script>
+    <script src="booking-form.js"></script> <!--131415 JS-->>
+    <script src="registration-form.js"></script>
+    <script src="feedback-form.js"></script>
+</body>
+
+</html>
