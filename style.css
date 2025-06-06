@@ -1062,7 +1062,7 @@ footer {
 }
 
 .footer-container {
-    width: 90%;
+    width: 80%;
     /* Изменено с max-width на width */
     margin: 0 auto;
     padding: 0 40px;
