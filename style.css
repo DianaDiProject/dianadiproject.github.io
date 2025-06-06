@@ -1210,7 +1210,7 @@ footer {
 }
 
 /*медиа-запрос для теелефонов*/
-@media (max-width: 360px) {
+@media (max-width: 860px) {
     .appointment-form {
         padding: 20px 16px;
     }
@@ -1330,7 +1330,7 @@ footer {
 }
 
 /*медиа-запрос для планшетов*/
-@media (min-width: 361px) and (max-width: 768px) {
+@media (min-width: 861px) and (max-width: 1550px) {
 
     .all_licenses {
         flex-wrap: wrap;
