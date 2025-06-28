@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РЕЗИНОВАЯ СЕТКА</title>
+    <link rel="stylesheet" href="style_rezin.css">
+</head>
+
+<body>
+    <header>
+        <div class="top_info">
+            <div class="top_logo">ЛОГО 1</div>
+            <div class="name">НАЗВАНИЕ 2</div>
+            <div class="search">ПОИСК 3</div>
+            <div class="burger" onclick="toggleMenu()">☰</div> <!-- Бургер-меню -->
+        </div>
+        <nav class="navigation" id="navMenu">
+            <div>НАВИГАЦИЯ 4</div>
+            <!-- Добавьте дополнительные элементы навигации здесь -->
+        </nav>
+    </header>
+
+    <main>
+        <div class="main_info">
+            <div class="slider">СЛАЙДЕР 5</div>
+            <div class="top_services">
+                <div class="service1">УСЛУГА 6</div>
+                <div class="service2">УСЛУГА 7</div>
+                <div class="service3">УСЛУГА 8</div>
+                <div class="service4">УСЛУГА 9</div>
+            </div>
+            <div class="forms">
+                <div class="feedback">ОБРАТНАЯ СВЯЗЬ 11</div>
+                <div class="map">МЫ НА КАРТЕ 12</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="bottom_info">
+            <div class="bottom_logo">ЛОГОТИП 12</div>
+            <div class="networks">СОЦ. СЕТИ 13</div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active'); // Переключаем класс активного состояния
+        }
+    </script>
+</body>
+
+</html>

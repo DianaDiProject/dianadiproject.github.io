@@ -1,0 +1,9 @@
+/* Стили для первой буквы элемента <p> */
+p::first-letter {
+    font-size: 40pt;
+    /* Размер первой буквы */
+    color: red;
+    /* Цвет */
+    text-decoration: underline;
+    /* Подчеркивание */
+}

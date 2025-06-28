@@ -1,0 +1,769 @@
+/*Нужно минимум 10 селекторов*/
+
+/*main part*/
+html {
+    scroll-behavior: smooth;
+    /*плавный скролл*/
+    scroll-margin: -100px;
+    /*отступ для скролла*/
+}
+
+.about-list {
+    list-style-type: disc;
+    /* Используем маркеры в виде кружков */
+    padding-left: 20px;
+    /* Отступ слева для списка */
+    margin-top: 30px;
+    /* Отступ сверху */
+    color: #F70776;
+    /* Цвет текста для элементов списка */
+}
+
+.about-list li {
+    margin-bottom: 20px;
+    /* Отступ между элементами списка */
+    font-size: 100px;
+    /* Размер шрифта */
+}
+
+.about-list h4 {
+    color: #ffffff;
+}
+
+.about-list h3,
+.about-list h4 {
+    margin: 0;
+    /* Убираем отступы у заголовков */
+}
+
+.section {
+    /*СЕЛЕКТОР КЛАССА*/
+    padding-top: 150px;
+    /*отступ сверху*/
+    margin-top: -150px;
+    /*отрицательный маргин*/
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /*шрифт*/
+    background-color: #141010;
+    /*фон*/
+    color: #FFFFFF;
+    /*текст*/
+    margin: 0px;
+    /*отступы*/
+    padding-top: 150px;
+    /*отступ сверху*/
+}
+
+header {
+    background-color: #680747;
+    /*фон шапки*/
+    position: fixed;
+    /*фикс позиция*/
+    width: 100%;
+    /*ширина*/
+    padding: 20px 0;
+    /*отступы*/
+    top: 0;
+    /*вверху*/
+    z-index: 1000;
+    /*слой*/
+}
+
+nav ul {
+    list-style-type: none;
+    /*без маркеров*/
+    display: flex;
+    /*флекс*/
+    justify-content: center;
+    /*по центру*/
+    padding: 40px;
+    /*отступы*/
+    margin: 0px;
+    /*отступы*/
+}
+
+nav ul li {
+    margin: 0 80px;
+    /*отступы*/
+}
+
+nav ul li a {
+    /*КОМБИНИРОВАННЫЙ СЕЛЕКТОР*/
+    text-decoration: none;
+    /*убрать подчеркивание*/
+    color: #F70776;
+    /*цвет*/
+    font-weight: bold;
+    /*жирный*/
+    font-size: 100px;
+    /*размер шрифта*/
+}
+
+nav ul li a:hover {
+    /*ПСЕВДОСЕЛЕКТОР*/
+    color: #ffffff;
+    /*цвет при наведении*/
+}
+
+
+#portfolio-section {
+    /*СЕЛЕКТОР ИДЕНТИФИКАТОР*/
+    background-color: #141010;
+}
+
+/* Main content */
+main {
+    padding-top: 150px;
+    /*отступ сверху*/
+    padding-left: 150px;
+    /*отступ слева*/
+    padding-right: 150px;
+    /*отступ справа*/
+}
+
+.skill-list {
+    list-style: none;
+    /*без маркеров*/
+    padding: 0px;
+    /*отступы*/
+    margin-top: 100px;
+    /*отступ сверху*/
+    text-align: center;
+    /*центр текста*/
+}
+
+.skill-list li {
+    font-size: 80px;
+    /*размер текста*/
+    color: #F70776;
+    /*цвет текста*/
+    display: inline-block;
+    /*ряд*/
+    border: 6px solid #F70776;
+    /*обводка*/
+    border-radius: 50px;
+    /*скругление*/
+    padding: 20px 30px;
+    /*отступы*/
+    margin: 10px;
+    /*отступы*/
+    text-align: center;
+    /*выравнивание*/
+}
+
+.lists {
+    margin: -50px;
+    /*отступ*/
+    margin-bottom: 50px;
+    /*отступ снизу*/
+}
+
+.alllists {
+    margin-bottom: 150px;
+    /*отступ снизу*/
+}
+
+.skill-list h3 {
+    font-size: 100px;
+    /*размер шрифта*/
+    color: #141010;
+    /*цвет текста*/
+    display: inline-block;
+    /*ряд*/
+    border-radius: 50px;
+    /*скругление*/
+    padding: 20px 30px;
+    /*отступы*/
+    background: #F70776;
+    /*фон*/
+    position: relative;
+    /*позиция*/
+}
+
+.D {
+    margin-right: 4620px;
+    /*отступ*/
+}
+
+.site {
+    margin-right: 2650px;
+    /*отступ*/
+}
+
+.another {
+    margin-right: 5330px;
+    /*отступ*/
+}
+
+.hhh {
+    color: #FFFFFF;
+    /*цвет текста*/
+    text-shadow: 0px 0px 40px rgb(255, 255, 255);
+    /*тень текста*/
+}
+
+h1,
+/*СЕЛЕКТОРЫ ГРУППИРОВКИ*/
+h2,
+h3,
+h4 {
+    /* Общие стили для всех заголовков */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/*h*/
+h1 {
+    /*СЕЛЕКТОР ТЕГА*/
+    text-align: center;
+    /*выравнивание*/
+    font-size: 275px;
+    /*размер*/
+    padding: 0px;
+    /*отступ*/
+    margin: 0px;
+    /*отступ*/
+    margin-top: 100px;
+    /*отступ сверху*/
+}
+
+h2 {
+    text-align: center;
+    /*выравнивание*/
+    font-size: 150px;
+    /*размер*/
+    font-weight: normal;
+    /*жирность*/
+    padding: 0px;
+    /*отступ*/
+    margin: 0px;
+    /*отступ*/
+    margin-top: -50px;
+    /*отступ сверху*/
+    margin-bottom: -30px;
+    /*отступ снизу*/
+}
+
+h3 {
+    text-align: center;
+    /*выравнивание*/
+    font-size: 120px;
+    /*размер*/
+    padding: 0px;
+    /*отступ*/
+    margin: 0px;
+    /*отступ*/
+    color: #F70776;
+    /*цвет*/
+}
+
+h4 {
+    text-align: center;
+    /*выравнивание*/
+    font-size: 100px;
+    /*размер*/
+    font-weight: normal;
+    /*жирность*/
+    padding: 0px;
+    /*отступ*/
+    margin: 0px;
+    /*отступ*/
+    margin-top: -25px;
+    /*отступ сверху*/
+}
+
+.title {
+    margin-bottom: 150px;
+    /*отступ снизу*/
+}
+
+.about-year {
+    margin-top: 30px;
+    /*отступ сверху*/
+}
+
+.about-year1 {
+    margin-top: 30px;
+    /*отступ сверху*/
+    margin-bottom: 130px;
+    /*отступ снизу*/
+}
+
+.under-head {
+    display: flex;
+    /*флекс*/
+    justify-content: space-between;
+    /*распределение*/
+    align-items: center;
+    /*выравнивание*/
+    font-size: 10px;
+    /*размер*/
+}
+
+.under-head h4 {
+    font-size: 75px;
+    /*размер*/
+}
+
+/*portfolio*/
+.portfolio h1 {
+    font-size: 350px;
+    /*размер*/
+}
+
+.portfolio h2 {
+    font-size: 170px;
+    /*размер*/
+    font-weight: normal;
+    /*жирность*/
+    margin-bottom: -130px;
+    /*отступ снизу*/
+}
+
+.image-container {
+    display: flex;
+    /*флекс*/
+    justify-content: center;
+    /*по центру*/
+    align-items: flex-start;
+    /*по верху*/
+    gap: 100px;
+    /*расстояние*/
+    margin-top: 175px;
+    /*отступ сверху*/
+}
+
+.image-column {
+    display: flex;
+    /*флекс*/
+    flex-direction: column;
+    /*вертикально*/
+    align-items: center;
+    /*по центру*/
+    border-radius: 50px;
+    /*скругление*/
+    padding: 30px;
+    /*отступы*/
+    background: #680747;
+    /*фон*/
+}
+
+.image-wrapper {
+    position: relative;
+    /*относительно*/
+}
+
+.program-name {
+    position: absolute;
+    /*абсолютное позиционирование*/
+    left: -1200px;
+    /*слева*/
+    bottom: 80px;
+    /*снизу*/
+    transform: translateX(-5000%) translateY(0%);
+    /*смещение*/
+    background-color: rgba(255, 255, 255, 0.652);
+    /*фон*/
+    padding: 30px;
+    /*отступы*/
+    border-radius: 50px;
+    /*скругление*/
+    transition: transform 0.2s;
+    /*переход*/
+    font-size: 100px;
+    /*размер*/
+    color: black;
+    /*цвет текста*/
+    text-align: center;
+    /*выравнивание*/
+    z-index: 10;
+    /*слой*/
+}
+
+.program-image {
+    border-radius: 75px;
+    /*скругление*/
+    width: 350px;
+    /*ширина*/
+    height: auto;
+    /*высота*/
+    margin: 15px 0;
+    /*отступы*/
+    transition: transform 0.5s;
+    /*переход*/
+    cursor: pointer;
+    /*курсор*/
+    position: relative;
+    /*позиция*/
+    z-index: 1;
+    /*слой*/
+}
+
+.program-image:hover {
+    transform: scale(1.1);
+    /*масштаб*/
+    z-index: 10;
+    /*поверх*/
+}
+
+.image-wrapper:hover .program-name {
+    /*СЕЛЕКТОР ПОТОМКОВ*/
+    transform: translateX(0%);
+    /*смещение*/
+}
+
+/*контактная часть*/
+.contact {
+    margin: 100px 0;
+    /*отступ*/
+    text-align: center;
+    /*выравнивание*/
+}
+
+.qr-codes {
+    display: flex;
+    /*флекс*/
+    justify-content: center;
+    /*по центру*/
+    gap: 400px;
+    /*расстояние*/
+    margin-top: -50px;
+    /*отступ*/
+    margin-bottom: 200px;
+    /*отступ*/
+}
+
+.qr-code {
+    text-align: center;
+    /*выравнивание*/
+}
+
+.qr-image {
+    width: 1500px;
+    /*ширина*/
+    height: auto;
+    /*высота*/
+    border: 10px solid #F70776;
+    /*граница*/
+    border-radius: 140px;
+    /*скругление*/
+    padding: 50px;
+    /*отступ*/
+}
+
+.qr-button {
+    display: block;
+    /*блок*/
+    margin: 0 auto;
+    /*авто*/
+    margin-top: 30px;
+    /*отступ сверху*/
+    background: #F70776;
+    /*фон*/
+    color: #141010;
+    /*цвет текста*/
+    border: none;
+    /*без границы*/
+    border-radius: 45px;
+    /*скругление*/
+    width: 1600px;
+    /*ширина*/
+    height: 200px;
+    /*высота*/
+    font-size: 90px;
+    /*размер текста*/
+    line-height: 100px;
+    /*высота строки*/
+    text-align: center;
+    /*выравнивание*/
+    cursor: pointer;
+    /*курсор*/
+}
+
+.qr-button:hover {
+    transform: scale(1.03);
+    /*масштаб при ховере*/
+}
+
+a {
+    text-decoration: none;
+    /*убрать подчеркивание*/
+}
+
+
+
+
+
+
+/* Contact Form Styles */
+.contact-form {
+    margin-top: 50px;
+    /* отступ сверху */
+    text-align: center;
+    /* выравнивание */
+    background-color: #141010;
+    /* фон */
+    padding: 20px;
+    /* отступы */
+    border-radius: 10px;
+    /* скругление */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    /* тень */
+}
+
+.contact-form h2 {
+    font-size: 75px;
+    /* размер */
+    color: #F70776;
+    /* цвет */
+    margin-bottom: 20px;
+    /* отступ снизу */
+}
+
+.contact-form label {
+    font-size: 50px;
+    /* размер */
+    color: #FFFFFF;
+    /* цвет */
+    display: block;
+    /* блочный элемент */
+    margin: 10px 0;
+    /* отступы */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea,
+.contact-form select {
+    width: 80%;
+    /* ширина */
+    padding: 10px;
+    /* отступ */
+    margin: 10px 0;
+    /* отступы */
+    border-radius: 5px;
+    /* скругление */
+    border: 1px solid #F70776;
+    /* граница */
+    font-size: 40px;
+    /* размер */
+    background-color: #1e1e1e;
+    /* фон полей */
+    color: #FFFFFF;
+    /* цвет текста */
+}
+
+.contact-form input[type="checkbox"] {
+    margin: 10px 0;
+    /* отступы */
+    transform: scale(4);
+    /* увеличение размера */
+}
+
+.contact-form input[type="submit"] {
+    background: linear-gradient(to bottom, #680747, #F70776);
+    /* градиент */
+    color: #FFFFFF;
+    /* текст */
+    border: none;
+    /* без границы */
+    border-radius: 30px;
+    /* скругление */
+    padding: 10px 20px;
+    /* отступы */
+    font-size: 50px;
+    /* размер */
+    cursor: pointer;
+    /* курсор */
+    transition: background 0.3s;
+    /* плавный переход */
+}
+
+.contact-form input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #F70776, #680747);
+    /* градиент при ховере */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-form h2 {
+        font-size: 50px;
+        /* уменьшение размера заголовка */
+    }
+
+    .contact-form label,
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="tel"],
+    .contact-form textarea,
+    .contact-form select {
+        font-size: 30px;
+        /* уменьшение размера текста */
+    }
+
+    .contact-form input[type="submit"] {
+        font-size: 40px;
+        /* уменьшение размера кнопки */
+    }
+}
+
+
+
+
+
+/*кейсы*/
+.case {
+    font-size: 100px;
+    /*размер текста*/
+    border: 10px solid #ffffff;
+    /*рамка*/
+    background-color: #141010;
+    /*фон*/
+    margin-bottom: 30px;
+    /*отступ снизу*/
+    border-radius: 40px;
+    /*скругление*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /*тень*/
+}
+
+.allcases {
+    margin-bottom: -100px;
+    /*отступ*/
+    margin-top: -40px;
+    /*отступ*/
+}
+
+.case-title {
+    padding-left: 100px;
+    /*отступ*/
+    cursor: pointer;
+    /*курсор*/
+    display: flex;
+    /*флекс*/
+    justify-content: space-between;
+    /*распределение*/
+    align-items: center;
+    /*выравнивание*/
+}
+
+.case-title:hover {
+    background-color: #F70776;
+    /*фон при ховере*/
+    border-radius: 30px;
+    /*скругление*/
+}
+
+.case-details {
+    display: none;
+    /*скрыто по умолчанию*/
+}
+
+/*.case-title:hover+.case-details {   СЕЛЕКТОР СОСЕДЕЙ
+    display: block; //отображение при наведении 
+}*/
+
+.case-text,
+.case-images {
+    margin: 20px;
+    /*отступы*/
+    margin-left: 60px;
+    /*отступ*/
+    margin-right: 60px;
+    /*отступ*/
+    padding: 40px;
+    /*внутренние отступы*/
+    background-color: #680747;
+    /*фон*/
+    border: 10px solid #FFFFFF;
+    /*рамка*/
+    border-radius: 40px;
+    /*скругление*/
+}
+
+.case-images {
+    background-color: #141010;
+    /*фон*/
+    border: none;
+    /*без рамки*/
+    display: flex;
+    /*флекс*/
+    flex-direction: column;
+    /*вертикаль*/
+    align-items: center;
+    /*по центру*/
+}
+
+.case-image {
+    width: 100%;
+    /*ширина*/
+    margin-bottom: 20px;
+    /*отступ снизу*/
+    border-radius: 50px;
+    /*скругление*/
+}
+
+.case span {
+    margin-right: 50px;
+    /*отступ*/
+}
+
+/*таблица*/
+table {
+    width: 100%;
+    /*ширина*/
+    border-collapse: collapse;
+    /*склеивание границ*/
+    background-color: #141010;
+    /*фон*/
+    border: 2px solid #ffffff;
+    /*граница*/
+}
+
+th {
+    background-color: #F70776;
+    /*фон*/
+    color: white;
+    /*текст*/
+    padding: 10px;
+    /*отступ*/
+    border: 2px solid #141010;
+    /*граница*/
+}
+
+td {
+    padding: 10px;
+    /*отступ*/
+    border: 2px solid #ffffff;
+    /*граница*/
+    text-align: center;
+    /*выравнивание*/
+}
+
+.image-cell {
+    width: 100px;
+    /*ширина ячейки*/
+}
+
+.case-audio {
+    display: flex;
+    /*флекс*/
+    justify-content: center;
+    /*по центру*/
+    margin-top: 20px;
+    /*отступ сверху*/
+}
+
+.case-audio audio {
+    width: 100%;
+    /*ширина*/
+    width: 600px;
+    /*максимум ширина*/
+    height: 40px;
+    /*высота*/
+}

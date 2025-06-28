@@ -1,0 +1,12 @@
+body {
+    /* Фоновый рисунок */
+    background-image: url('Field.jpg');
+    /* Фоновый рисунок не повторяется */
+    background-repeat: no-repeat;
+    /* Начертание шрифта */
+    font-family: 'Times New Roman', serif;
+    /* Размер шрифта */
+    font-size: 1cm;
+    /* Цвет шрифта */
+    color: blue;
+}

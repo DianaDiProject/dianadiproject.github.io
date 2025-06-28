@@ -1,0 +1,83 @@
+section {
+    color: #438290;
+    background-color: #d0ecf2;
+    width: 22.5%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.otz {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+    grid-row: 2;
+}
+
+.otz img {
+    width: 210px;
+    grid-column: 1;
+}
+
+.otz h3 {
+    font-size: 25px;
+    margin: 0;
+    grid-column: 2;
+    font-weight: 600;
+}
+
+section h3 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.h3b {
+    font-weight: 600;
+}
+
+.lap {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 5px;
+}
+
+.lap img {
+    width: 55px;
+    height: auto;
+    grid-column: 1;
+}
+
+.lap h3 {
+    margin: 0;
+    font-size: 24px;
+    grid-column: 2;
+}
+
+.price {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* auto для обоих колонок */
+    align-items: center;
+    grid-row: 6;
+    justify-content: start;
+    /* Выравнивание по левому краю */
+    gap: 10px;
+    /* Контролируемый промежуток между элементами */
+}
+
+.price h2 {
+    margin: 20px 100px 20px 0;
+    font-size: 38px;
+    grid-column: 1;
+}
+
+.price img {
+    width: 85px;
+    grid-column: 2;
+}

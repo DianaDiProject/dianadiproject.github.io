@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Василевская Диана">
+    <title>Василевская Диана</title>
+    <link rel="stylesheet" href="first.css"> <!-- Подключение CSS файла -->
+</head>
+
+<body>
+    <!--Первое задание с текстом-->
+    <h1>Василевская Диана</h1>
+    <p class="group">Группа: <sub>ПЗТ-41</sub></p>
+    <p class="course">Курс: <sup>1</sup></p>
+    <p class="hobbies">Увлечения: 3D и программирование</p>
+
+    <!--Второе задание со спсиском-->
+    <ol type="A" start="2"> <!--Буквы-->
+        <li>Зима</li>
+        <li>Весна</li>
+        <li>Лето</li>
+    </ol>
+
+    <div class="image-container">
+        <img src="/aaa.webp" alt="Изображение колизея" width="600">
+        <p>Колизей</p>
+    </div>
+
+    <p><a href="https://ru.wikipedia.org" target="_blank">Привет</a></p> <!-- Гиперссылка на Wikipedia -->
+    <p><a href="arxiv.zip" download>Скачать архив</a></p> <!-- Гиперссылка для скачивания файла -->
+
+    <table class="student-table"> <!--Третье задание с таблицей-->
+        <tr>
+            <td class="stud-cell">Учащийся</td>
+            <td rowspan="3" class="group-cell">Группа</td>
+        </tr>
+        <tr>
+            <td class="stud-cell">Учащийся</td>
+        </tr>
+        <tr>
+            <td class="stud-cell">Учащийся</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="curator-cell">Куратор</td>
+        </tr>
+    </table>
+
+
+<div class="login-form"> <!--Форма-->
+    <div class="form-group">
+        <label for="email">E-mail:</label>
+        <div class="input-with-icon">
+            <img src="/aaa.webp" alt="Icon" class="email-icon" width="30">
+            <input type="text" id="email" name="email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password"><!--Пароль-->
+    </div>
+    <div class="checkbox-group">
+        <div class="checkbox-labels">
+            <label>
+                <input type="checkbox"> запомнить
+            </label>
+            <label>
+                <input type="checkbox"> скрытый
+            </label>
+        </div>
+        <button type="submit">Вход</button> <!--Кнопка-->
+    </div>
+    <div class="link-group">
+        <a href="#">Забыл пароль</a> | <a href="#">Регистрация</a> <!--Ссылки-->
+    </div>
+</div>
+
+
+</body>
+
+</html>
