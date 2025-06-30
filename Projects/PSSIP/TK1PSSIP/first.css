@@ -1,0 +1,147 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    /*Шрифт*/
+    font-size: 16pt;
+    background-color: yellow;
+    /* Цвет текста желтый */
+}
+
+h1 {
+    text-align: left;
+    /* Заголовок по левому краю */
+}
+
+.group {
+    color: green;
+    /* Цвет группы зеленый */
+}
+
+.course {
+    text-align: right;
+    /* Выравнивание справа */
+}
+
+.hobbies {
+    text-align: center;
+    /* Выравнивание по центру */
+    text-decoration: underline;
+    /* Подчеркнутое */
+}
+
+.image-container {
+    text-align: right;
+    /* Выравнивание по правому краю */
+    margin-top: 20px;
+    /* Отступ сверху */
+}
+
+.image-container img {
+    border: 3px solid black;
+    /* Рамка вокруг изображения */
+    max-width: 100%;
+    /* Адаптивная ширина */
+    height: auto;
+    /* Автоматическая высота */
+}
+
+.student-table {
+    width: 30%;
+    /* Измените ширину таблицы на 80% */
+    margin: 0 auto;
+    /* Центрирование таблицы */
+    border-collapse: collapse;
+    border: 1px solid black;
+    /* Одинарная рамка */
+}
+
+.student-table td {
+    border: 1px solid black;
+    /* Одинарная рамка для ячеек */
+}
+
+.group-cell {
+    background-color: rgb(255, 255, 255);
+    /* Цвет фона для 'Группа' */
+    vertical-align: top;
+    /* Выровнять текст по верхнему краю */
+    padding-left: 10px;
+    /* Добавить отступ слева */
+}
+
+.curator-cell {
+    background-color: rgb(97, 97, 97);
+    /* Цвет фона для 'Куратор' */
+    padding-left: 10px;
+    /* Добавить отступ слева */
+}
+
+.stud-cell {
+    background-color: rgb(169, 169, 169);
+    /* Цвет фона для 'Учащийся' */
+    padding-left: 10px;
+    /* Добавить отступ слева */
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-labels {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    /* Отступ между чекбоксами и кнопкой */
+}
+
+button {
+    /* Стили для кнопки, если нужно */
+}
+
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon input {
+    padding-right: 30px;
+    /* Добавляем место для иконки */
+}
+
+.email-icon {
+    width: 20px;
+    /* Устанавливаем ширину иконки */
+}
+
+.login-form {
+    position: absolute;
+    align-items: center;
+}
+
+.link-group {
+    font-size: 15px;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* добавьте по необходимости */
+}
+
+.form-group label {
+    margin-right: 10px;
+    min-width: 60px;
+    /* чтобы лейбл не мешал */
+}
+
+.input-with-icon {
+    display: flex;
+    align-items: center;
+}
+
+.email-icon {
+    margin-right: 8px;
+}

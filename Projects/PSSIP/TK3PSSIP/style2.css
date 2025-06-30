@@ -1,0 +1,67 @@
+* { /*весь документ*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-size: clamp(0.5rem, 1.5vw, 0.1rem);
+}
+
+.block3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    width: 6%;
+}
+
+.top-row {
+    display: flex;
+    height: 33.33vh;
+}
+
+.bottom-row {
+    display: flex;
+    height: 66.66vh;
+}
+
+.block1,
+.block2,
+.block3,
+.block4 {
+    width: 100%;
+  }
+
+.block1 {
+    background-color: #ff9999;
+}
+
+.block2 {
+    background-color: #99ff99;
+}
+
+.block3 {
+    background-color: #9999ff;
+}
+
+.block4 {
+    background-color: #ffff99;
+}
+
+.block5 {
+    background-color: #ff99ff;
+    width: 94%;
+}

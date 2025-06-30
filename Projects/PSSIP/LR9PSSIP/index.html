@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let day = prompt("Введите номер дня недели (1-7):");
+
+        switch (day) {
+            case '1': alert("Понедельник"); break;
+            case '2': alert("Вторник"); break;
+            case '3': alert("Среда"); break;
+            case '4': alert("Четверг"); break;
+            case '5': alert("Пятница"); break;
+            case '6': alert("Суббота"); break;
+            case '7': alert("Воскресенье"); break;
+            default: alert("Некорректный ввод!");
+        }
+
+        let result = "";
+
+        for (let i = 1; i <= 5; i++) {
+            result += "Итерация " + i + "\n";
+        }
+
+        alert(result);
+
+        let answer = confirm("Вы согласны с условиями?");
+
+        if (answer) {
+            alert("Вы согласились!");
+        } else {
+            alert("Вы отказались!");
+        }
+
+        let number;
+        let result3 = "";
+
+        do {
+            number = prompt("Введите число больше 10:");
+        } while (number <= 10);
+
+        alert("Вы ввели: " + number);
+
+        let result4 = "";
+
+        for (let i = 1; i <= 10; i++) {
+            if (i === 6) {
+                break;
+            }
+            result += i + " ";
+        }
+
+        alert("Числа до break: " + result);
+
+        let result5 = "";
+
+        for (let i = 1; i <= 10; i++) {
+            if (i % 2 === 0) {
+                continue;
+            }
+            result += i + " ";
+        }
+
+        alert("Нечетные числа: " + result);
+
+        function square(num) {
+            return num * num;
+        }
+
+        let number1 = prompt("Введите число:");
+        alert("Квадрат числа: " + square(number));
+    </script>
+
+    <script src="sposob4.js"></script>
+</head>
+
+<body>
+    <button onclick="alert('Это встроенный JavaScript!')">Способ 1</button>
+    <script>
+        function showMessage() {
+            let count = 1;
+            let result2 = "";
+
+            while (count <= 5) {
+                result += "Счетчик: " + count + "\n";
+                count++;
+            }
+
+            alert(result);
+        }
+
+        function showMessage1() {
+            alert("Это второй способ вызова JavaScript!");
+        }
+
+        function hyperlinkClick() {
+            alert("Вы кликнули по гиперссылке!");
+            return false; // Предотвращаем переход по ссылке
+        }
+    </script>
+    <button onclick="showMessage1()">Способ 2</button>
+    <button onclick="showMessage()">Способ 3</button>
+
+    <!-- Добавленная гиперссылка с JavaScript -->
+    <a href="#" onclick="hyperlinkClick()">Клик</a>
+</body>
+
+</html>

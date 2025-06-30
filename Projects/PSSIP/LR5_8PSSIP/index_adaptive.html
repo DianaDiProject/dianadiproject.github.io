@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АДАПТИВНАЯ СЕТКА</title>
+    <link rel="stylesheet" href="style_adaptive.css">
+</head>
+
+<body>
+    <header>
+        <div class="top_info">
+            <div class="top_logo">ЛОГО 1</div>
+            <div class="name">НАЗВАНИЕ 2</div>
+            <div class="search">ПОИСК 3</div>
+            <div class="burger" onclick="toggleMenu()">☰</div> <!-- Бургер-меню -->
+        </div>
+        <nav class="navigation" id="navMenu">
+            <div>НАВИГАЦИЯ 4</div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main_info">
+            <div class="slider">СЛАЙДЕР 5</div>
+            <div class="top_services">
+                <div class="service1">
+                    <section>
+                        <img src="bag.png" alt="">
+                        <div class="otz">
+                            <img src="stars.png" alt="">
+                            <h3>3 отзыва</h3>
+                        </div>
+                        <h3>Continent</h3>
+                        <h3 class="h3b">Сумка для ноутбука</h3>
+                        <div class="lap">
+                            <img src="lap.png" alt="">
+                            <h3>15"</h3>
+                        </div>
+                        <div class="price">
+                            <h2>2 099 РУБ</h2>
+                            <img src="shop.png" alt="">
+                        </div>
+                    </section>
+                </div>
+                <div class="service2">
+                    <section>
+                        <img src="bag.png" alt="">
+                        <div class="otz">
+                            <img src="stars.png" alt="">
+                            <h3>3 отзыва</h3>
+                        </div>
+                        <h3>Continent</h3>
+                        <h3 class="h3b">Сумка для ноутбука</h3>
+                        <div class="lap">
+                            <img src="lap.png" alt="">
+                            <h3>15"</h3>
+                        </div>
+                        <div class="price">
+                            <h2>2 099 РУБ</h2>
+                            <img src="shop.png" alt="">
+                        </div>
+                    </section>
+                </div>
+                <div class="service3">
+                    <section>
+                        <img src="bag.png" alt="">
+                        <div class="otz">
+                            <img src="stars.png" alt="">
+                            <h3>3 отзыва</h3>
+                        </div>
+                        <h3>Continent</h3>
+                        <h3 class="h3b">Сумка для ноутбука</h3>
+                        <div class="lap">
+                            <img src="lap.png" alt="">
+                            <h3>15"</h3>
+                        </div>
+                        <div class="price">
+                            <h2>2 099 РУБ</h2>
+                            <img src="shop.png" alt="">
+                        </div>
+                    </section>
+                </div>
+                <div class="service4">
+                    <section>
+                        <img src="bag.png" alt="">
+                        <div class="otz">
+                            <img src="stars.png" alt="">
+                            <h3>3 отзыва</h3>
+                        </div>
+                        <h3>Continent</h3>
+                        <h3 class="h3b">Сумка для ноутбука</h3>
+                        <div class="lap">
+                            <img src="lap.png" alt="">
+                            <h3>15"</h3>
+                        </div>
+                        <div class="price">
+                            <h2>2 099 РУБ</h2>
+                            <img src="shop.png" alt="">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="forms">
+                <div class="feedback">
+                    <form class="registration-form">
+                        <h1 class="form-title">Форма регистрации</h1>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <input type="text" id="oio" name="oio" placeholder="ФИО">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Телефон (для SMS-уведомлений)">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="E-mail">
+                            </div>
+
+                            <div class="form-group">
+                                <select id="registration-type" name="registration-type">
+                                    <option value="" selected disabled>Тип регистрации (виберите)</option>
+                                    <option value="type1">Тип 1</option>
+                                    <option value="type2">Тип 2</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="car-brand" name="car-brand" placeholder="Марка автомобиля">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="car-model" name="car-model" placeholder="Модель автомобиля">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="year-month" name="year-month" placeholder="Год и месяц выпуска">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="modification" name="modification" placeholder="Модификация">
+                            </div>
+
+                            <div class="centered-field">
+                                <input type="text" id="vin" name="vin" placeholder="VIN* код автомобиля">
+                                <p class="note">* Vehicle identification number (17-ти значный код указан в техпаспорте
+                                    автомобиля)</p>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">РЕГИСТРАЦИЯ</button>
+
+                        <p class="privacy-note">
+                            Ваши контактные данные в безопасности.<br>
+                            Мы не будем передавать их третьим лицам.
+                        </p>
+                    </form>
+                </div>
+                <div class="feedback">
+                    <form class="registration-form">
+                        <h1 class="form-title">Форма регистрации</h1>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <input type="text" id="oio" name="oio" placeholder="ФИО">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Телефон (для SMS-уведомлений)">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="E-mail">
+                            </div>
+
+                            <div class="form-group">
+                                <select id="registration-type" name="registration-type">
+                                    <option value="" selected disabled>Тип регистрации (виберите)</option>
+                                    <option value="type1">Тип 1</option>
+                                    <option value="type2">Тип 2</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="car-brand" name="car-brand" placeholder="Марка автомобиля">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="car-model" name="car-model" placeholder="Модель автомобиля">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="year-month" name="year-month" placeholder="Год и месяц выпуска">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="modification" name="modification" placeholder="Модификация">
+                            </div>
+
+                            <div class="centered-field">
+                                <input type="text" id="vin" name="vin" placeholder="VIN* код автомобиля">
+                                <p class="note">* Vehicle identification number (17-ти значный код указан в техпаспорте
+                                    автомобиля)</p>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">РЕГИСТРАЦИЯ</button>
+
+                        <p class="privacy-note">
+                            Ваши контактные данные в безопасности.<br>
+                            Мы не будем передавать их третьим лицам.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="bottom_info">
+            <div class="bottom_logo">ЛОГОТИП 12</div>
+            <div class="networks">СОЦ. СЕТИ 13</div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active'); // Переключаем класс активного состояния
+        }
+    </script>
+</body>
+
+</html>

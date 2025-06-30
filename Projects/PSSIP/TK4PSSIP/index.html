@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вариант №80 - JavaScript задания</title>
+    <script src="external.js"></script>
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+
+    <!-- Задание 1 -->
+    <button onclick="showCurrentYear()">Показать год</button>
+    <script>
+        function showCurrentYear() {
+            const today = new Date();
+            const day = today.getDate();
+            alert("Текущий день в месяце: " + day);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Задание 2 -->
+    <div>
+        <div id="outputName"></div>
+        <script>
+            const n = 3; // номер варианта
+            const repetitions = n + 5;
+            let nameOutput = "";
+
+            for (let i = 0; i < repetitions; i++) {
+                nameOutput += "Василевская Диана <br>";
+            }
+
+            document.getElementById("outputName").innerHTML = nameOutput;
+        </script>
+    </div>
+
+    <!-- Задание 3 -->
+    <div>
+        <div id="arrayOutput"></div>
+        <script>
+            // Создаем массив из 5 целых элементов
+            const arr = [3, -2, 7, -5, 10];
+
+            // Находим сумму положительных элементов
+            let sum = 0;
+            for (let num of arr) {
+                if (num > 0) sum += num;
+            }
+
+            // Сортируем массив по возрастанию
+            const sortedArr = [...arr].sort((a, b) => a - b);
+
+            // Выводим результаты
+            let arrayOutputText = "<strong>Исходный массив:</strong> " + arr.join(", ") + "<br>";
+            arrayOutputText += "<strong>Сумма положительных элементов:</strong> " + sum + "<br>";
+            arrayOutputText += "<strong>Отсортированный массив:</strong> " + sortedArr.join(", ");
+
+            document.getElementById("arrayOutput").innerHTML = arrayOutputText;
+        </script>
+    </div>
+
+    <p>Формула: y = (1 - x) / (x<sup>2</sup> - 9)</p>
+    
+    <div class="input-group">
+        <label for="xValue">Введите значение x:</label>
+        <input type="number" id="xValue" step="any">
+    </div>
+    
+    <button onclick="calculate()">Рассчитать</button>
+    
+    <div id="result"></div>
+    
+    <script>
+        function calculate() {
+            const x = parseFloat(document.getElementById('xValue').value);
+            const resultDiv = document.getElementById('result');
+
+            try {
+                const y = calculateFormula(x);
+                resultDiv.innerHTML = `При x = ${x}, y = ${y.toFixed(4)}`;
+            } catch (error) {
+                resultDiv.innerHTML = '';
+                alert(error.message);
+            }
+        }
+    </script>
+
+    <!-- Задание 5 -->
+    <div>
+        <div id="stringOutput" style="white-space: pre;"></div>
+        <script>
+            // Исходные строки
+            const initialS1 = "Диана";
+            const initialS2 = "Программирование и моделирование";
+
+            // Рабочие копии
+            let s1 = initialS1;
+            let s2 = initialS2;
+
+            // 4. Длина строки S1
+            const s1Length = s1.length;
+
+            // 5. Добавляем ДВА пробела между словами в S2
+                s3 = s2.split(" ").join("&nbsp;&nbsp;");
+
+            // 6. Замена "Диана" на "Павел" в S1
+            s1 = s1.replace("Диана", "Павел");
+
+            // Вывод результатов
+            let output = "<strong>Исходные строки:</strong>\n";
+            output += `S1: ${initialS1}\nS2: ${initialS2}\n\n`;
+            output += "<strong>Результаты:</strong>\n";
+            output += `4. Длина S1: ${s1Length}\n`;
+            output += `5. S2 с двумя пробелами: "${s3}"\n`;
+            output += `6. S1 после замены: "${s1}"`;
+
+            document.getElementById("stringOutput").innerHTML = output;
+        </script>
+    </div>
+</body>
+
+</html>

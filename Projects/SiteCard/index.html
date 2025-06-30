@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head> <!--Голова сайта-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="first.css">
+
+    <!--
+               или
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        /*...*/
+    </style> 
+    
+               или
+
+    <style>
+        @import url("first.css");
+    </style>
+    
+    ещё способы задать стили -->
+
+
+</head>
+
+<body> <!--Тело сайта-->
+    <header> <!--Шапка сайта-->
+        <nav>
+            <ul>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#programs">Программы</a></li>
+                <li><a href="#projects">Мои работы</a></li>
+                <li><a href="#feedback">Обратная связь</a></li> <!--Хеш-ссылка на разделы (На якоря)-->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="under-head">
+            <h4>3D-дизайнер/веб-дизайнер</h4> <!--Последний способ задать стиль-->
+            <h4 style="font-size: 75px; font-weight: bold;">2025</h4>
+        </div>
+
+        <div id="portfolio-section" class="portfolio section"> <!--Якорь-->
+            <div class="title">
+                <hr>
+                <h1 class="hhh">ПОРТФОЛИО</h1>
+                <h2>ВАСИЛЕВСКАЯ ДИAНA</h2>
+            </div>
+            <div class="alllists">
+                <h3 class="D">3D</h3>
+                <ul class="skill-list"> <!--Список маркированный-->
+                    <li>Создание 3D моделей</li>
+                    <li>Создание 3D сцен</li>
+                    <li>Анимирование</li>
+                    <li>Рендеринг</li>
+                    <li>Текстурирование</li>
+                    <li>Скульптинг</li>
+                </ul>
+
+                <!--<dl> Список описаний
+                    <dt>
+                        <dd>
+                            
+                        </dd>
+                    </dt>
+                </dl>
+
+                <ol> Нумерованный список
+                    <li>
+
+                    </li>
+                </ol>--> <!--Примеры других списков-->
+
+                <h3 class="site">Сайты</h3>
+                <ul class="skill-list">
+
+                    <li>Прототипирование</li>
+                    <li>Вёрстка</li>
+                    <li>Стилизация</li>
+                    <li>Парсинг</li>
+                </ul>
+
+                <h3 class="another">Другое</h3>
+                <ul class="skill-list">
+                    <li>Разработка Desktop приложений</li>
+                    <li>Разработка Telegram-ботов</li>
+                    <li>Разработка UML диаграмм</li>
+                    <li>Создание презентаций</li>
+                    <li>Написание технической документации</li>
+                    <li>Копирайтинг</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about section" id="about">
+            <div class="title">
+                <hr> <!--Горизонтальный разделитель-->
+                <h1 class="hhh">ОБО МНЕ</h1>
+                <h2>3 ГОДА ОПЫТА РАБОТЫ</h2>
+            </div>
+
+            <ul class="about-list">
+                <li>
+                    <h3>2023 - СЕЙЧАС</h3>
+                    <h4>Работа</h4>
+                </li>
+                <li>
+                    <h3>2024</h3>
+                    <h4>Оператор ЭВМ</h4>
+                </li>
+                <li>
+                    <h3>2025</h3>
+                    <h4>Инженер-программист</h4>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="programs section" id="programs">
+            <div class="title">
+                <hr>
+                <h1 class="hhh">ПРОГРАММЫ</h1>
+                <h2>В КОТОРЫХ Я РАБОТАЮ</h2>
+                <div class="image-container">
+                    <div class="image-column">
+                        <div class="image-wrapper">
+                            <img src="Images/PHOTOSHOP_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Adobe Photoshop</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="Images/FIGMA_logo.png" class="program-image" alt="Program Image"> <!--Картинки-->
+                            <div class="program-name">Figma</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="Images/ILLUSTRATOR_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Adobe Illustrator</div>
+                        </div>
+                    </div>
+
+                    <div class="image-column">
+                        <div class="image-wrapper">
+                            <img src="Images/BLENDER_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Blender</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="Images/3DPAINTER_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Adobe Substance 3D Painter</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="Images/ZBRUSH_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">ZBrush</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="Images/MARMOSET_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Marmoset Toolbag</div>
+                        </div>
+                    </div>
+
+                    <div class="image-column">
+                        <div class="image-wrapper">
+                            <img src="Images/PHOTOSHOP_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Adobe Photoshop</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="Images/PHOTOSHOP_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Figma</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="Images/PHOTOSHOP_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Adobe Illustrator</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="Images/PHOTOSHOP_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Adobe Illustrator</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="Images/PHOTOSHOP_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Adobe Illustrator</div>
+                        </div>
+                    </div>
+
+                    <div class="image-column">
+                        <div class="image-wrapper">
+                            <img src="Images/PHOTOSHOP_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Adobe Photoshop</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="Images/PHOTOSHOP_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Figma</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="Images/PHOTOSHOP_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Adobe Illustrator</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="Images/PHOTOSHOP_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Adobe Illustrator</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="Images/PHOTOSHOP_logo.png" class="program-image" alt="Program Image">
+                            <div class="program-name">Adobe Illustrator</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="projects section" id="projects">
+                <div class="title">
+                    <hr>
+                    <h1 class="hhh">МОИ РАБОТЫ</h1>
+                </div>
+                <div class="allcases">
+                    <div class="case">
+                        <div class="case-title" onclick="toggleDetails(this)">
+                            <p>КЕЙС 1</p>
+                            <p><b>Desktop приложение</b> "Визуализация интерьера"</p>
+                            <span class="arrow">►</span>
+                        </div>
+
+                        <div class="case-details">
+                            <div class="case-text">
+                                <p><strong>Задача: </strong>ТЕКСТ</p>
+                                <p><strong>Решение: </strong>ТЕКСТ</p>
+                            </div>
+                            <div class="case-images">
+                                <img src="/Images/Laptop_Interior.png" alt="Главное окно" class="case-image">
+                                <img src="/Images/Interior1.png" alt="Форма визуализации" class="case-image">
+                                <img src="/Images/Interior2.png" alt="Форма каталога товаров" class="case-image">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="case">
+                        <div class="case-title" onclick="toggleDetails(this)">
+                            <p>КЕЙС 2</p>
+                            <p><b>Telegram-бот</b> по обучению 3D "DONUT"</p>
+                            <span class="arrow">►</span>
+                        </div>
+
+                        <div class="case-details">
+                            <div class="case-text">
+                                <p><strong>Задача: </strong>ТЕКСТ</p>
+                                <p><strong>Решение: </strong>ТЕКСТ</p>
+                            </div>
+                            <div class="case-images">
+                                <img src="/Images/Interior2.png" alt="Описание1" class="case-image">
+                                <img src="/Images/Interior2.png" alt="Описание2" class="case-image">
+                                <img src="/Images/Interior2.png" alt="Описание3" class="case-image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case">
+                        <div class="case-title" onclick="toggleDetails(this)">
+                            <p>КЕЙС 3</p>
+                            <p><b>Сайт</b> филиалов ОАО «Агрокомбинат «Скидельский»</p>
+                            <span class="arrow">►</span>
+                        </div>
+
+                        <div class="case-details">
+                            <div class="case-text">
+                                <p><strong>Задача: </strong>ТЕКСТ</p>
+                                <p><strong>Решение: </strong>ТЕКСТ</p>
+                            </div>
+                            <div class="case-images">
+                                <video controls class="case-video">
+                                    <source src="/Images/Video_filials.mp4" type="video/mp4">
+                                    Видео-презентация агрокомплекса
+                                </video>
+                                <img src="/Images/Interior2.png" alt="Описание2" class="case-image">
+                                <img src="/Images/Interior2.png" alt="Описание3" class="case-image">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="case">
+                        <div class="case-title" onclick="toggleDetails(this)">
+                            <p>КЕЙС 4</p>
+                            <p><b>3D анимация</b> "Желейный тетрис"</p>
+                            <span class="arrow">►</span>
+                        </div>
+
+                        <div class="case-details">
+                            <div class="case-text">
+                                <p><strong>Задача: </strong>ТЕКСТ</p>
+                                <p><strong>Решение: </strong>ТЕКСТ</p>
+                            </div>
+                            <div class="case-images">
+                                <video src="/Images/Video_tetris.mov" controls width="2000" autoplay loop>
+                                    Ваш браузер не поддерживает тег video.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="case">
+                        <div class="case-title" onclick="toggleDetails(this)">
+                            <p>КЕЙС 5</p>
+                            <p><b>Тест</b></p>
+                            <span class="arrow">►</span>
+                        </div>
+                    
+                        <div class="case-details">
+                            <div class="case-text">
+                                <p><strong>Задача: </strong>ТЕКСТ</p>
+                                <p><strong>Решение: </strong>ТЕКСТ</p>
+                            </div>
+                            <div class="case-audio">
+                                <audio controls>
+                                    <source src="/Images/Рык тигра (короткий звук).mp3" type="audio/mpeg">
+                                    Ваш браузер не поддерживает элемент audio.
+                                </audio>                                                                           Звук
+                            </div>
+                        </div>
+                    </div> 
+
+
+                    <div class="case">
+                        <div class="case-title" onclick="toggleDetails(this)">
+                            <p></p>
+                            <p><b> Отзывы</b></p>
+                            <span class="arrow">►</span>
+                        </div>
+
+                        <div class="case-details">
+                            <div class="case-text">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Название заказа</th>
+                                            <th colspan="2">Заказ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Создание 3D модели</td>
+                                            <td class="image-cell"><img src="path/to/image1.jpg" alt="3D модель"
+                                                    width="100"></td>
+                                            <td>Отличный опыт! Модель получилась именно такой, как я хотел.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Обучение Blender</td>
+                                            <td class="image-cell"><img src="path/to/image2.jpg" alt="Обучение"
+                                                    width="100"></td>
+                                            <td>Курсы были очень информативными и понятными. Рекомендую!</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Работа с Substance 3D</td>
+                                            <td class="image-cell"><img src="path/to/image3.jpg" alt="Substance 3D"
+                                                    width="100"></td>
+                                            <td>Программа удобная, а материалы обучения помогли быстро освоиться.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Создание текстур</td>
+                                            <td class="image-cell"><img src="path/to/image4.jpg" alt="Создание текстур"
+                                                    width="100"></td>
+                                            <td>Потрясающие результаты! Текстуры выглядят великолепно.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Участие в конкурсе</td>
+                                            <td class="image-cell"><img src="path/to/image5.jpg" alt="Конкурс"
+                                                    width="100"></td>
+                                            <td>Конкурс был организован на высшем уровне, получил много полезного опыта.                  Таблица
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>-->
+                    <div class="case-images">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+
+        <div class="contact section" id="feedback">
+            <div class="title">
+                <hr>
+                <h1 class="hhh">ОБРАТНАЯ СВЯЗЬ</h1>
+            </div>
+
+            <div class="qr-codes">
+                <div class="qr-code">
+                    <img src="/Images/INSTAGRAM_QRcode.png" alt="Instagram QR Code" class="qr-image">
+                    <a href="https://www.instagram.com/prog_portfolio/?next=%2F&hl=ru" target="_blank"
+                        class="qr-button"><b>INSTAGRAM</b></a>
+                </div>
+                <div class="qr-code">
+                    <img src="/Images/GITHUB_QRcode.png" alt="GitHub QR Code" class="qr-image">
+                    <a href="https://github.com/DianaDiProject" target="_blank" class="qr-button"><b>GITHUB</b>
+                        <!--Ссылка в новом окне-->
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form"> <!--Форма-->
+                <h2>Оставьте сообщение</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="893cfc03-689f-4fd0-b216-05270a5d75d3">
+
+                    <label for="name">Имя:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">Телефон:</label><br>
+                    <input type="tel" id="phone" name="phone"><br><br>
+
+                    <label for="subject">Тема:</label><br>
+                    <select id="subject" name="subject" required>
+                        <option value="">Выберите тему</option>
+                        <option value="general">Общее</option>
+                        <option value="support">Поддержка</option>
+                        <option value="sales">Продажи</option>
+                        <option value="feedback">Обратная связь</option>
+                    </select><br><br>
+
+                    <label for="message">Сообщение:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Подписаться на новости</label><br><br>
+
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+
+
+        </div>
+
+    </main>
+</body>
+
+</html>

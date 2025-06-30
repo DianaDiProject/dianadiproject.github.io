@@ -1,0 +1,137 @@
+/* Шапка */
+.top_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(126, 212, 13);
+    width: 1881px;
+    height: 76px;
+}
+
+/* Логотип */
+.top_logo {
+    background-color: blueviolet;
+    width: 76px;
+    height: 76px;
+}
+
+/* Название сайта */
+.name {
+    background-color: rgb(226, 43, 134);
+    width: 1550px;
+    height: 76px;
+}
+
+/* Строка поиска по сайту */
+.search {
+    background-color: rgb(43, 43, 226);
+    width: 255px;
+    height: 76px;
+}
+
+/* Главная часть */
+.main_info {
+    background-color: rgb(166, 31, 31);
+    width: 1881px;
+    height: 814px;
+}
+
+.burger {
+    display: none;
+}
+
+/* Навигация по сайту */
+.navigation {
+    background-color: rgb(43, 180, 226);
+    width: 1881px;
+    height: 20px;
+}
+
+/* Слайдер */
+.slider {
+    background-color: rgb(224, 231, 19);
+    width: 1881px;
+    height: 245px;
+}
+
+/* Топ услуг */
+.top_services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 19, 206);
+    width: 1881px;
+    height: 228px;
+}
+
+.service1,
+.service2,
+.service3,
+.service4 {
+    width: 470.25px;
+    height: 228px;
+}
+
+.service1 {
+    background-color: rgb(40, 14, 144);
+}
+
+.service2 {
+    background-color: rgb(231, 130, 29);
+}
+
+.service3 {
+    background-color: rgb(40, 200, 144);
+}
+
+.service4 {
+    background-color: rgb(137, 2, 142);
+}
+
+/* Формы */
+.forms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(14, 144, 85);
+    width: 1881px;
+    height: 341px;
+}
+
+.feedback {
+    background-color: rgb(247, 116, 225);
+    width: 940.5px;
+    height: 341px;
+}
+
+.map {
+    background-color: rgb(33, 77, 134);
+    width: 940.5px;
+    height: 341px;
+}
+
+/* Подвал */
+.bottom_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(126, 212, 13);
+    width: 1881px;
+    height: 118px;
+}
+
+.bottom_logo {
+    background-color: blueviolet;
+    width: 118px;
+    height: 118px;
+}
+
+.networks {
+    background-color: rgb(43, 43, 226);
+    width: 1763px;
+    height: 118px;
+}
